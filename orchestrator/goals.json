@@ -1,0 +1,33 @@
+[
+  {
+    "id": "goal_9ec82c99-9fb2-48a3-99d4-8f17b0374f5b",
+    "title": "sum.sh adds correctly",
+    "intent": "sum.sh adds correctly",
+    "acceptance": [
+      {
+        "text": "All test pass"
+      }
+    ],
+    "status": "abandoned",
+    "blockedReason": "Test",
+    "evidence": [],
+    "created": "2026-10-10T14:01:34.796493+00:00",
+    "updated": "2026-10-10T14:03:29.337040+00:00",
+    "humanActionAt": "2026-10-10T14:03:29.337027+00:00"
+  },
+  {
+    "id": "goal_0f76a892-5592-485f-863b-b871f4f74ded",
+    "title": "sum.sh adds correctly",
+    "intent": "sum.sh adds correctly",
+    "acceptance": [
+      {
+        "text": "All test pass"
+      }
+    ],
+    "status": "active",
+    "evidence": [],
+    "created": "2026-10-10T14:05:02.804344+00:00",
+    "updated": "2026-10-10T14:06:55.512594+00:00",
+    "humanActionAt": "2026-10-10T14:06:55.512594+00:00"
+  }
+]

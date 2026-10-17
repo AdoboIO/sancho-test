@@ -1,0 +1,111 @@
+{
+  "version": 2,
+  "updatedAt": "2026-10-10T14:09:21.882713+00:00",
+  "statuses": [
+    "Inbox",
+    "Ready",
+    "Assigned",
+    "Running",
+    "Verifying",
+    "Blocked",
+    "Review",
+    "Done",
+    "Failed",
+    "Canceled"
+  ],
+  "priorities": [
+    "Low",
+    "Normal",
+    "High",
+    "Urgent"
+  ],
+  "tasks": [
+    {
+      "id": "dt_fad00ae5c733",
+      "title": "Fix sum.sh",
+      "details": "Acceptance criteria:\n- Fix sum.sh",
+      "status": "Done",
+      "priority": "Normal",
+      "reportedBy": "delivery",
+      "dependsOn": [],
+      "attempts": 0,
+      "createdAt": "2026-10-10T14:08:23.892182+00:00",
+      "updatedAt": "2026-10-10T14:09:21.882652+00:00",
+      "verification": {
+        "status": "passed",
+        "checks": [
+          {
+            "command": "./test.sh",
+            "source": "default",
+            "passed": true,
+            "ran": true,
+            "exitCode": 0,
+            "timedOut": false,
+            "durationMs": 751,
+            "outputTail": ""
+          }
+        ],
+        "diff": {
+          "files": 11,
+          "insertions": 1,
+          "deletions": 1
+        },
+        "startedAt": "2026-10-10T14:09:03.963539+00:00",
+        "finishedAt": "2026-10-10T14:09:04.993062+00:00",
+        "evidence": {
+          "evidenceId": "ev_fb2d1d27531d4148ab92d99617a9c1d1",
+          "revision": {
+            "repositoryId": "repo_176283a246b84fbc9b57627151d10d27",
+            "headCommit": "3264bcec1ac217aa8f6160b7ebd98a0bd33e4595",
+            "indexTree": "df677fc7565de9b6c58e88811c112d5c724a0b8e",
+            "contentDigest": "7b44906e8f1515f48c01de7d7ce64652543d1aef0ec770ab024712afe59f6329",
+            "manifestVersion": 1,
+            "scopePolicyHash": "3be03ef67a125d4a5eb5f864e5e170d81b88e82273425e87d9db886a7ebd4f26",
+            "dirty": true,
+            "entries": 2,
+            "bytes": 102
+          },
+          "policyHash": "893ea64f00733deee5b0f7963324f1d7668fd6c0d86b0386e73509d3263ab540",
+          "environment": {
+            "os": "macos",
+            "arch": "aarch64",
+            "toolVersions": {}
+          },
+          "freshness": "current"
+        }
+      },
+      "verificationHistory": [
+        {
+          "status": "passed",
+          "startedAt": "2026-10-10T14:09:03.963539+00:00",
+          "finishedAt": "2026-10-10T14:09:04.993062+00:00",
+          "checks": 1
+        }
+      ],
+      "fixAttempts": 0,
+      "statusLog": [
+        {
+          "at": "2026-10-10T14:08:28.916580+00:00",
+          "from": "Ready",
+          "to": "Running",
+          "by": "sancho"
+        },
+        {
+          "at": "2026-10-10T14:09:03.964723+00:00",
+          "from": "Running",
+          "to": "Verifying",
+          "by": "sancho"
+        },
+        {
+          "at": "2026-10-10T14:09:21.882713+00:00",
+          "from": "Verifying",
+          "to": "Done",
+          "by": "sancho"
+        }
+      ],
+      "goalId": "goal_0f76a892-5592-485f-863b-b871f4f74ded",
+      "deliveryPlanId": "plan_dae68a557d8542988ae6acb6990ad4e6",
+      "deliveryManaged": true
+    }
+  ]
+}
