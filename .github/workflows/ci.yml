@@ -1,6 +1,7 @@
 name: ci
 on:
   pull_request:
+    types: [opened, synchronize, reopened, edited]
   push:
     branches: [main]
 jobs:
@@ -11,7 +12,7 @@ jobs:
       - uses: actions/checkout@v4
       - run: ./test.sh
   docs:
-    name: docs (./lint.sh - every script must be listed in README.md)
+    name: "docs (./lint.sh: every script must be listed in README.md and have a '# usage:' comment line)"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
