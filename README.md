@@ -1,1 +1,2 @@
 - sum.sh: adds numbers
+- multiply.sh: multiplies numbers
