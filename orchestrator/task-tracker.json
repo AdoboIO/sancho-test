@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-10-10T14:09:21.882713+00:00",
+  "updatedAt": "2026-10-18T03:57:02.454425+00:00",
   "statuses": [
     "Inbox",
     "Ready",
@@ -63,7 +63,8 @@
             "scopePolicyHash": "3be03ef67a125d4a5eb5f864e5e170d81b88e82273425e87d9db886a7ebd4f26",
             "dirty": true,
             "entries": 2,
-            "bytes": 102
+            "bytes": 102,
+            "treeDigest": null
           },
           "policyHash": "893ea64f00733deee5b0f7963324f1d7668fd6c0d86b0386e73509d3263ab540",
           "environment": {
@@ -105,6 +106,112 @@
       ],
       "goalId": "goal_0f76a892-5592-485f-863b-b871f4f74ded",
       "deliveryPlanId": "plan_dae68a557d8542988ae6acb6990ad4e6",
+      "deliveryManaged": true
+    },
+    {
+      "id": "dt_d984099f9c02",
+      "title": "Fix sum.sh",
+      "details": "Acceptance criteria:\n- ./test.sh passes",
+      "status": "Done",
+      "priority": "Normal",
+      "reportedBy": "delivery",
+      "dependsOn": [],
+      "attempts": 0,
+      "createdAt": "2026-10-18T03:21:26.762959+00:00",
+      "updatedAt": "2026-10-18T03:57:02.454411+00:00",
+      "verification": {
+        "status": "passed",
+        "checks": [
+          {
+            "command": "./test.sh",
+            "source": "default",
+            "passed": true,
+            "ran": true,
+            "exitCode": 0,
+            "timedOut": false,
+            "durationMs": 117,
+            "outputTail": ""
+          }
+        ],
+        "diff": {
+          "files": 11,
+          "insertions": 1,
+          "deletions": 3
+        },
+        "startedAt": "2026-10-18T03:22:06.822635+00:00",
+        "finishedAt": "2026-10-18T03:22:07.210004+00:00",
+        "evidence": {
+          "evidenceId": "ev_16a0145d60ea4febbb55db38a4ce7dfc",
+          "revision": {
+            "repositoryId": "repo_931a49cf6ab7429182f37978ab946eff",
+            "headCommit": "5d9e0ba346e11f6d5e23eeda710bc5fa039d0c77",
+            "indexTree": "950f719b42123bad0606ce01dfafd4afe5eba419",
+            "contentDigest": "298dcd9a80078ca919d2cc934a4e061e2b14c23e23bc30ef70ab9394de61a3a6",
+            "manifestVersion": 1,
+            "scopePolicyHash": "3be03ef67a125d4a5eb5f864e5e170d81b88e82273425e87d9db886a7ebd4f26",
+            "dirty": true,
+            "entries": 21,
+            "bytes": 194187,
+            "treeDigest": "a3c50d172a8ab79aa97c1abdd349de14649f2ecad8f445f5a870c9a79040740d"
+          },
+          "policyHash": "893ea64f00733deee5b0f7963324f1d7668fd6c0d86b0386e73509d3263ab540",
+          "environment": {
+            "os": "macos",
+            "arch": "aarch64",
+            "toolVersions": {}
+          },
+          "freshness": "current"
+        }
+      },
+      "verificationHistory": [
+        {
+          "status": "passed",
+          "startedAt": "2026-10-18T03:22:06.822635+00:00",
+          "finishedAt": "2026-10-18T03:22:07.210004+00:00",
+          "checks": 1
+        }
+      ],
+      "fixAttempts": 0,
+      "statusLog": [
+        {
+          "at": "2026-10-18T03:21:31.787313+00:00",
+          "from": "Ready",
+          "to": "Running",
+          "by": "sancho"
+        },
+        {
+          "at": "2026-10-18T03:22:06.823370+00:00",
+          "from": "Running",
+          "to": "Verifying",
+          "by": "sancho"
+        },
+        {
+          "at": "2026-10-18T03:22:46.831726+00:00",
+          "from": "Verifying",
+          "to": "Review",
+          "by": "sancho"
+        },
+        {
+          "at": "2026-10-18T03:24:46.930459+00:00",
+          "from": "Review",
+          "to": "Done",
+          "by": "sancho"
+        },
+        {
+          "at": "2026-10-18T03:26:46.863883+00:00",
+          "from": "Done",
+          "to": "Blocked",
+          "by": "sancho"
+        },
+        {
+          "at": "2026-10-18T03:57:02.454425+00:00",
+          "from": "Blocked",
+          "to": "Done",
+          "by": "sancho"
+        }
+      ],
+      "goalId": "goal_0f76a892-5592-485f-863b-b871f4f74ded",
+      "deliveryPlanId": "plan_3cf0652cecd548c98169794513f6cce1",
       "deliveryManaged": true
     }
   ]

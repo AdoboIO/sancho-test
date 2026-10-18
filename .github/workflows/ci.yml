@@ -1,0 +1,18 @@
+name: ci
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  test:
+    name: test (./test.sh)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./test.sh
+  docs:
+    name: docs (./lint.sh - every script must be listed in README.md)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./lint.sh
